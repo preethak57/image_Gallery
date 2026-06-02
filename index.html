@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<div class="filters">
+    <button onclick="filterSelection('all')">All</button>
+    <button onclick="filterSelection('nature')">Nature</button>
+    <button onclick="filterSelection('city')">City</button>
+    <button onclick="filterSelection('animal')">Animals</button>
+</div>
+
+<div class="gallery">
+
+<img src="images/nature1.jpg" class="gallery-item nature">
+<img src="images/nature2.jpg" class="gallery-item nature">
+
+<img src="images/city1.jpg" class="gallery-item city">
+<img src="images/city2.jpg" class="gallery-item city">
+
+<img src="images/animal1.jpg" class="gallery-item animal">
+<img src="images/animal2.jpg" class="gallery-item animal">
+
+</div>
+
+<div id="lightbox">
+    <span id="close">&times;</span>
+    <button id="prev">&#10094;</button>
+    <img id="lightbox-img">
+    <button id="next">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
